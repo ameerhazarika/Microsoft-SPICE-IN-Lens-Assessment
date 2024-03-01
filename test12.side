@@ -1,0 +1,69 @@
+{
+  "id": "7c1f4fb2-0f8f-4367-ae6c-f31b7d36db73",
+  "version": "2.0",
+  "name": "test 2",
+  "url": "https://gate2024.iisc.ac.in",
+  "tests": [{
+    "id": "267189cd-800f-406d-b074-ccf24ef1b8f9",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "5912cb4b-0166-44e3-8981-dd940e436f05",
+    "name": "download pwd",
+    "commands": [{
+      "id": "876be896-7b41-47ae-9cd6-c18923f64efd",
+      "comment": "",
+      "command": "open",
+      "target": "/download/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "73a8ce11-ebaa-4b73-864d-e1bb45337ef2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "05b03e6c-1170-4798-82f1-ad6748cffa99",
+      "comment": "",
+      "command": "click",
+      "target": "css=.et_pb_text_1 a",
+      "targets": [
+        ["css=.et_pb_text_1 a", "css:finder"],
+        ["xpath=//a[contains(text(),'PwD DOCUMENTS')]", "xpath:link"],
+        ["xpath=//article[@id='post-1120']/div/div/div/div/div/div/div[2]/div/h2/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://gate2024.iisc.ac.in/wp-content/uploads/2023/12/PwDAndCertificatesNeededWithAppendices.docx')]", "xpath:href"],
+        ["xpath=//div[2]/div/h2/a", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win1791",
+      "windowTimeout": 2000
+    }, {
+      "id": "2a23de65-6f3e-472f-a2cd-c2378b4ffb92",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "67f8a6ca-589c-489a-b844-579ffd90cede",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ce77a5e9-1e61-4f24-a903-38298e33ec53",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["267189cd-800f-406d-b074-ccf24ef1b8f9"]
+  }],
+  "urls": ["https://gate2024.iisc.ac.in/"],
+  "plugins": []
+}
